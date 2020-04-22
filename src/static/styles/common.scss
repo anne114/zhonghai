@@ -1,0 +1,16 @@
+@import '~@/static/styles/_mixins.scss';
+@import '~@/static/styles/_uni.scss';
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    color: $color_black;
+}
+.flex{
+    display: flex;
+}
+.mt10{
+    margin-top: 10rpx;
+}

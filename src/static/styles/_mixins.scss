@@ -1,0 +1,46 @@
+@mixin W($w) {
+  width: $w + rpx;
+}
+@mixin H($h) {
+  height: $h + rpx;
+}
+@mixin WH($w, $h) {
+  @include W($w);
+  @include H($h);
+}
+@mixin LHM($w, $h) {
+  @include WH($w, $h);
+  line-height: $h + rpx;
+}
+@mixin radius($size) {
+  @include WH($size, $size);
+  border-radius: $size + rpx;
+}
+@mixin bg-img($url, $size: 100%) {
+  // background-image: url("~@/static/images/"+$url);
+  background-size: $size;
+  background-repeat: no-repeat;
+}
+
+@mixin inline-bg-img($w, $h, $url, $size: 100%) {
+  display: inline-block;
+  @include WH($w, $h);
+  @include bg-img($url, $size);
+}
+@mixin pseudo-class {
+  position: absolute;
+  content: "";
+  display: block;
+}
+@mixin after {
+  position: relative;
+  &::after {
+    @include pseudo-class();
+  }
+}
+@mixin before {
+  position: relative;
+  &::before {
+    @include pseudo-class();
+  }
+}
