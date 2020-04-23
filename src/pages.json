@@ -8,7 +8,10 @@
 		{
 			"path": "pages/index/contact/index",
 			"style": {
-				"navigationBarTitleText": "联系我们"
+				"navigationBarTitleText": "在线咨询",
+				"navigationStyle": "default",
+				"navigationBarBackgroundColor":"#ffffff",
+				"navigationBarTextStyle":"black"
 			}
 		},
 		{
@@ -34,7 +37,6 @@
 		"navigationStyle": "custom",
 		"pageOrientation": "portrait",
 		"navigationBarTextStyle": "white",
-		"navigationBarTitleText": "Hello uniapp",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#F8F8F8",
 		"backgroundColorTop": "#F4F5F6",

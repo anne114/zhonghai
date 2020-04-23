@@ -6,7 +6,7 @@
         <h4 class="t-h4">医疗讲座</h4>
         <p class="tip c-x-grey">专业名师讲解</p>
       </li>
-      <li class="t-item">
+      <li class="t-item" @click="handler_contact">
         <h4 class="t-h4">医疗讲座</h4>
         <p class="tip c-x-grey">最全的医药平台</p>
       </li>
@@ -54,14 +54,7 @@ export default {
   },
   methods: {
     handler_contact() {
-      console.log("ssss");
-      // uni.navigateTo({
-      //   url: "pages/lecture/index"
-      // });
-      uni.navigateTo({
-        url: "pages/lecture/index"
-      });
-      // nav_to_contact();
+      nav_to_contact();
     }
   }
 };
