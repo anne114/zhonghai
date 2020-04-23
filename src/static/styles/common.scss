@@ -1,16 +1,108 @@
 @import '~@/static/styles/_mixins.scss';
 @import '~@/static/styles/_uni.scss';
-*{
+
+* {
     padding: 0;
     margin: 0;
     list-style: none;
+    box-sizing: border-box;
 }
-html{
+
+html {
     color: $color_black;
+    font-size: 24rpx;
+    font-family: '微软雅黑', Arial, Helvetica, sans-serif;
+    line-height: 150%;
 }
-.flex{
+
+img {
+    vertical-align: middle;
+}
+
+.flex {
     display: flex;
+    flex-wrap:wrap;
 }
-.mt10{
-    margin-top: 10rpx;
+// 元素中间的间距一样，两边的元素没有间距
+.flex-jc-sb{
+    justify-content:space-between;
+}
+// 元素中间的间距一样，两边的元素有一半间距
+.flex-jc-sa{
+    justify-content:space-around;
+}
+// 元素往中间靠
+.flex-jc-c{
+    justify-content:center;
+}
+// 显示省略号
+.elli{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+// 右箭头图片
+.r-tran {
+    @include WH(32, 32);
+    margin-left: 3rpx;
+}
+
+// --浮动
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+// text-align
+.t-r {
+    text-align: right;
+}
+
+.t-c {
+    text-align: center;
+}
+
+// --margin
+.mt-2{
+    margin-top: 4rpx;
+}
+.mt10 {
+    margin-top: 20rpx;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+
+//--字体大小
+.fs-14 {
+    font-size: 28rpx;
+}
+
+.fs-16 {
+    font-size: 32rpx;
+}
+
+.fs-18 {
+    font-size: 36rpx;
+}
+
+.fs-20 {
+    font-size: 40rpx;
+}
+// --字体颜色
+.c-grey {
+    color: $color_grey;
+}
+.c-x-grey {
+    color: $color_x_grey;
+}
+.c-blue{
+    color: $color_blue;
 }

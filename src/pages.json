@@ -1,68 +1,32 @@
 {
-	"pages": [
-		{
+	"pages": [{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页",
-				"app-plus": {
-					"bounce": "vertical",
-					"titleNView": {
-						"buttons": [{
-							"text": "\ue534",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "22px",
-							"color": "#FFFFFF"
-						}]
-					}
-				}
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/index/contact/index",
+			"style": {
+				"navigationBarTitleText": "联系我们"
 			}
 		},
 		{
 			"path": "pages/lecture/index",
 			"style": {
-				"navigationBarTitleText": "医疗讲座",
-				"app-plus": {
-					"titleNView": {
-						"buttons": [{
-							"text": "\ue534",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "22px",
-							"color": "#FFFFFF"
-						}]
-					}
-				}
+				"navigationBarTitleText": "医疗讲座"
 			}
 		},
 		{
 			"path": "pages/drug/index",
 			"style": {
-				"navigationBarTitleText": "药品库",
-				"app-plus": {
-					"titleNView": {
-						"buttons": [{
-							"text": "\ue534",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "22px",
-							"color": "#FFFFFF"
-						}]
-					}
-				}
+				"navigationBarTitleText": "药品库"
 			}
 		},
 		{
 			"path": "pages/user/index",
 			"style": {
-				"navigationBarTitleText": "个人中心",
-				"app-plus": {
-					"titleNView": {
-						"buttons": [{
-							"text": "\ue534",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "22px",
-							"color": "#FFFFFF"
-						}]
-					}
-				}
+				"navigationBarTitleText": "个人中心"
 			}
 		}
 	],
@@ -77,10 +41,10 @@
 		"backgroundColorBottom": "#F4F5F6"
 	},
 	"tabBar": {
-		"color": "#7A7E83",
-		"selectedColor": "#007AFF",
-		"borderStyle": "black",
-		"backgroundColor": "#F8F8F8",
+		"color": "#9E9E9E",
+		"selectedColor": "#9E9E9E",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/index/index",
 				"iconPath": "static/images/tabar_ico_home_def@2x.png",
@@ -92,7 +56,8 @@
 				"iconPath": "static/images/tabar_ico_lecture_def@2x.png",
 				"selectedIconPath": "static/images/tabar_ico_lecture_sel@2x.png",
 				"text": "医疗讲座"
-			}, {
+			},
+			{
 				"pagePath": "pages/drug/index",
 				"iconPath": "static/images/tabar_ico_stock_def@2x.png",
 				"selectedIconPath": "static/images/tabar_ico_stock_sel@2x.png",
@@ -104,5 +69,6 @@
 				"text": "模板"
 			}
 		]
-	}
+	},
+	"sitemapLocation": "sitemap.json"
 }

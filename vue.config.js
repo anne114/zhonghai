@@ -6,8 +6,7 @@ module.exports = {
           .use('sass-resources-loader')
           .loader('sass-resources-loader')
           .options({   
-            // Or array of paths（这个可以删掉）
-            resources: ['./path/to/vars.scss', './path/to/mixins.scss']
+            resources: ['./src/static/styles/_mixins.scss', './src/static/styles/_uni.scss']
           })
           .end()
       })
