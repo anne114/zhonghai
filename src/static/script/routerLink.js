@@ -10,3 +10,15 @@ export function nav_to_contact() {
         url: "/pages/index/contact/index"
     });
 }
+// 跳转到登录页
+export function nav_to_login() {
+    uni.navigateTo({
+        url: "/pages/login/index"
+    });
+}
+// 跳转到注册页
+export function nav_to_register() {
+    uni.navigateTo({
+        url: "/pages/login/register"
+    });
+}

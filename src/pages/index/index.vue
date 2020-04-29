@@ -19,14 +19,17 @@
       <div class="c-grey t-r mt20">
         <span>
           更多讲座
-          <img src="../../static/images/ico_right_into_sml@2x.png" class="r-tran" />
+          <img
+            src="../../static/images/ico_right_into_sml@2x.png"
+            class="r-tran"
+          />
         </span>
       </div>
       <div class="line c-blue">
         <span class="text">药品推荐</span>
       </div>
       <div class="drug-box flex flex-jc-sb">
-        <div class="d-item" v-for="(item,index) in drug_lists" :key="index">
+        <div class="d-item" v-for="(item, index) in drug_lists" :key="index">
           <drugItem />
         </div>
       </div>
@@ -41,26 +44,43 @@
 import lectureItem from "@/components/index/lectureItem.vue";
 import drugItem from "@/components/index/drugItem.vue";
 import { nav_to_contact } from "@/static/script/routerLink";
+import { get_lecture_list } from "@/static/script/http/lecture";
 export default {
   components: {
     lectureItem,
-    drugItem
+    drugItem,
   },
   data() {
     return {
       lecture_list: [1, 2],
-      drug_lists: [1, 2, 2, 3, 2]
+      drug_lists: [1, 2, 2, 3, 2],
     };
   },
   methods: {
     handler_contact() {
       nav_to_contact();
-    }
-  }
+    },
+    get_lecture_list_http() {
+      try {
+        get_lecture_list({
+          Page: 1,
+          Limit: 0,
+          Count: 2,
+          PageCount: 2,
+        });
+      } catch (error) {
+        console.log("error::", error);
+      }
+    },
+  },
+  onLoad() {
+    console.log("indexshow");
+    this.get_lecture_list_http();
+  },
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .slider {
   @include WH(750, 400);
   background: #ccc;

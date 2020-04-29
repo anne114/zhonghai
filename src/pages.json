@@ -2,16 +2,26 @@
 	"pages": [{
 			"path": "pages/index/index",
 			"style": {
+				"navigationStyle": "custom",
 				"navigationBarTitleText": "首页"
 			}
 		},
 		{
 			"path": "pages/index/contact/index",
 			"style": {
-				"navigationBarTitleText": "在线咨询",
-				"navigationStyle": "default",
-				"navigationBarBackgroundColor":"#ffffff",
-				"navigationBarTextStyle":"black"
+				"navigationBarTitleText": "在线咨询"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/login/register",
+			"style": {
+				"navigationBarTitleText": "注册"
 			}
 		},
 		{
@@ -34,13 +44,12 @@
 		}
 	],
 	"globalStyle": {
-		"navigationStyle": "custom",
 		"pageOrientation": "portrait",
-		"navigationBarTextStyle": "white",
-		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#F8F8F8",
 		"backgroundColorTop": "#F4F5F6",
-		"backgroundColorBottom": "#F4F5F6"
+		"backgroundColorBottom": "#F4F5F6",
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTextStyle": "black"
 	},
 	"tabBar": {
 		"color": "#9E9E9E",

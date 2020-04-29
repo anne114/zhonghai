@@ -17,7 +17,7 @@
   border-radius: $size + rpx;
 }
 @mixin bg-img($url, $size: 100%) {
-  // background-image: url("~@/static/images/"+$url);
+  background-image: url("~@/static/images/"+$url);
   background-size: $size;
   background-repeat: no-repeat;
 }
